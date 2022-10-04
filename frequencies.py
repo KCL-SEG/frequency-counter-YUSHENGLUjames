@@ -4,9 +4,10 @@
 def frequencies(*items):
     frequencies = {}
     # Your code goes here
+
     for object in items:
-        name = str(object)
+        name = object
         number = items.count(object)
-        frequencies.update({name:number})
+        frequencies.update({str(name):number})
 
     return frequencies
